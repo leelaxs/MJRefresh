@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSBundle (MJRefresh)
 + (instancetype)gu_refreshBundle;
-+ (UIImage *)mj_arrowImage;
-+ (UIImage *)mj_trailArrowImage;
-+ (NSString *)mj_localizedStringForKey:(NSString *)key value:(nullable NSString *)value;
-+ (NSString *)mj_localizedStringForKey:(NSString *)key;
++ (UIImage *)gu_arrowImage;
++ (UIImage *)gu_trailArrowImage;
++ (NSString *)gu_localizedStringForKey:(NSString *)key value:(nullable NSString *)value;
++ (NSString *)gu_localizedStringForKey:(NSString *)key;
 @end
 
 NS_ASSUME_NONNULL_END

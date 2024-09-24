@@ -51,10 +51,10 @@
 
 - (void)textConfiguration {
     // 初始化文字
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshBackFooterIdleText] forState:MJRefreshStateIdle];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshBackFooterPullingText] forState:MJRefreshStatePulling];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshBackFooterRefreshingText] forState:MJRefreshStateRefreshing];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshBackFooterNoMoreDataText] forState:MJRefreshStateNoMoreData];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshBackFooterIdleText] forState:MJRefreshStateIdle];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshBackFooterPullingText] forState:MJRefreshStatePulling];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshBackFooterRefreshingText] forState:MJRefreshStateRefreshing];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshBackFooterNoMoreDataText] forState:MJRefreshStateNoMoreData];
 }
 
 #pragma mark - 重写父类的方法

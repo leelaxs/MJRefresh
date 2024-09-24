@@ -69,9 +69,9 @@
 
 - (void)textConfiguration {
     // 初始化文字
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshAutoFooterIdleText] forState:MJRefreshStateIdle];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshAutoFooterRefreshingText] forState:MJRefreshStateRefreshing];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshAutoFooterNoMoreDataText] forState:MJRefreshStateNoMoreData];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshAutoFooterIdleText] forState:MJRefreshStateIdle];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshAutoFooterRefreshingText] forState:MJRefreshStateRefreshing];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshAutoFooterNoMoreDataText] forState:MJRefreshStateNoMoreData];
 }
 
 #pragma mark - 重写父类的方法

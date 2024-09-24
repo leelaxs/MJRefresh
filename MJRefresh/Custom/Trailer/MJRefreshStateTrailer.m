@@ -46,9 +46,9 @@
 
 - (void)textConfiguration {
     // 初始化文字
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshTrailerIdleText] forState:MJRefreshStateIdle];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshTrailerPullingText] forState:MJRefreshStatePulling];
-    [self setTitle:[NSBundle mj_localizedStringForKey:MJRefreshTrailerPullingText] forState:MJRefreshStateRefreshing];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshTrailerIdleText] forState:MJRefreshStateIdle];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshTrailerPullingText] forState:MJRefreshStatePulling];
+    [self setTitle:[NSBundle gu_localizedStringForKey:MJRefreshTrailerPullingText] forState:MJRefreshStateRefreshing];
 }
 
 #pragma mark - 覆盖父类的方法

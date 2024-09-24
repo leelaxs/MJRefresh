@@ -22,7 +22,7 @@
 - (UIImageView *)arrowView
 {
     if (!_arrowView) {
-        UIImageView *arrowView = [[UIImageView alloc] initWithImage:[NSBundle mj_arrowImage]];
+        UIImageView *arrowView = [[UIImageView alloc] initWithImage:[NSBundle gu_arrowImage]];
         [self addSubview:_arrowView = arrowView];
     }
     return _arrowView;

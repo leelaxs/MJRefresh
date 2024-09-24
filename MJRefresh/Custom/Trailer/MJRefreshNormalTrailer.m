@@ -19,7 +19,7 @@
 #pragma mark - 懒加载子控件
 - (UIImageView *)arrowView {
     if (!_arrowView) {
-        UIImageView *arrowView = [[UIImageView alloc] initWithImage:[NSBundle mj_trailArrowImage]];
+        UIImageView *arrowView = [[UIImageView alloc] initWithImage:[NSBundle gu_trailArrowImage]];
         [self addSubview:_arrowView = arrowView];
     }
     return _arrowView;

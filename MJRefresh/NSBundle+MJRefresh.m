@@ -28,7 +28,7 @@ static NSBundle *mj_systemI18nBundle = nil;
     return refreshBundle;
 }
 
-+ (UIImage *)mj_arrowImage
++ (UIImage *)gu_arrowImage
 {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
@@ -37,7 +37,7 @@ static NSBundle *mj_systemI18nBundle = nil;
     return arrowImage;
 }
 
-+ (UIImage *)mj_trailArrowImage {
++ (UIImage *)gu_trailArrowImage {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
         arrowImage = [[UIImage imageWithContentsOfFile:[[self gu_refreshBundle] pathForResource:@"trail_arrow@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
@@ -45,12 +45,12 @@ static NSBundle *mj_systemI18nBundle = nil;
     return arrowImage;
 }
 
-+ (NSString *)mj_localizedStringForKey:(NSString *)key
++ (NSString *)gu_localizedStringForKey:(NSString *)key
 {
-    return [self mj_localizedStringForKey:key value:nil];
+    return [self gu_localizedStringForKey:key value:nil];
 }
 
-+ (NSString *)mj_localizedStringForKey:(NSString *)key value:(NSString *)value
++ (NSString *)gu_localizedStringForKey:(NSString *)key value:(NSString *)value
 {
     NSString *table = MJRefreshConfig.defaultConfig.i18nFilename;
     
