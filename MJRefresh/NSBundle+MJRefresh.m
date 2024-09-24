@@ -14,7 +14,7 @@ static NSBundle *mj_defaultI18nBundle = nil;
 static NSBundle *mj_systemI18nBundle = nil;
 
 @implementation NSBundle (MJRefresh)
-+ (instancetype)mj_refreshBundle
++ (instancetype)gu_refreshBundle
 {
     static NSBundle *refreshBundle = nil;
     if (refreshBundle == nil) {
@@ -32,7 +32,7 @@ static NSBundle *mj_systemI18nBundle = nil;
 {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
-        arrowImage = [[UIImage imageWithContentsOfFile:[[self mj_refreshBundle] pathForResource:@"arrow@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        arrowImage = [[UIImage imageWithContentsOfFile:[[self gu_refreshBundle] pathForResource:@"arrow@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     }
     return arrowImage;
 }
@@ -40,7 +40,7 @@ static NSBundle *mj_systemI18nBundle = nil;
 + (UIImage *)mj_trailArrowImage {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
-        arrowImage = [[UIImage imageWithContentsOfFile:[[self mj_refreshBundle] pathForResource:@"trail_arrow@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        arrowImage = [[UIImage imageWithContentsOfFile:[[self gu_refreshBundle] pathForResource:@"trail_arrow@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     }
     return arrowImage;
 }
@@ -102,7 +102,7 @@ static NSBundle *mj_systemI18nBundle = nil;
     }
     
     // 从MJRefresh.bundle中查找资源
-    return [NSBundle bundleWithPath:[[NSBundle mj_refreshBundle] pathForResource:language ofType:@"lproj"]];
+    return [NSBundle bundleWithPath:[[NSBundle gu_refreshBundle] pathForResource:language ofType:@"lproj"]];
 }
 @end
 
